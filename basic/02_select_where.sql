@@ -29,6 +29,9 @@ WHERE address2 IS NOT NULL;
 SELECT * FROM address
 WHERE address2 = '';
 
+
+
+-- **연습**
 -- 프로그래머스 Lv.1: 아픈 동물 찾기
 -- SELECT + WHERE + 비교 연산자
 SELECT ANIMAL_ID, NAME FROM ANIMAL_INS
