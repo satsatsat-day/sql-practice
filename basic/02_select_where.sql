@@ -28,3 +28,19 @@ WHERE address2 IS NOT NULL;
 -- 3) 공백 조회 (공백은 NULL이 아님)
 SELECT * FROM address
 WHERE address2 = '';
+
+-- 프로그래머스 Lv.1: 아픈 동물 찾기
+-- SELECT + WHERE + 비교 연산자
+SELECT ANIMAL_ID, NAME FROM ANIMAL_INS
+WHERE INTAKE_CONDITION = 'Sick';
+
+-- 프로그래머스 Lv.1: 조건에 맞는 회원수 구하기
+-- 논리 연산자 연습
+SELECT COUNT(*) FROM USER_INFO
+WHERE (joined BETWEEN '2021-01-01' AND '2022-01-01')
+  AND age >= 20 AND age <= 29;
+
+-- 프로그래머스 Lv.1: 이름이 없는 동물의 아이디
+-- IS NULL 조건 연습
+SELECT animal_id FROM ANIMAL_INS
+WHERE name IS NULL;
