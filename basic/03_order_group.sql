@@ -38,3 +38,5 @@ HAVING cnt > 70;
 -- 중복된 데이터 제거
 SELECT DISTINCT special_features, rating
 FROM film;
+
+
